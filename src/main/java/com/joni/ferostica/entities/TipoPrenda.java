@@ -1,5 +1,6 @@
 package com.joni.ferostica.entities;
 
-public class Talla {
+public class TipoPrenda {
 
+	
 }

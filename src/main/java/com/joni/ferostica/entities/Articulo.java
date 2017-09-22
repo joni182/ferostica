@@ -18,7 +18,11 @@ public class Articulo {
 	private Genero genero;
 	private Estado estado;
 	private String observaciones;
+	private int tallaNumerica;
+	private String tallaLetras;
+	private int porcentaje;
 	
 	@ManyToOne
 	private Color color;
+	
 }
