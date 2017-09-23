@@ -5,19 +5,21 @@ public class Tienda {
 	private long id_tienda;
 	private String nombre;
 	private int telefono;
+	private String email;
 	private String direccion;
 	private String cif;
-
+	
 	public Tienda() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Tienda(long id_tienda, String nombre, int telefono, String direccion, String cif) {
+	public Tienda(long id_tienda, String nombre, int telefono, String email, String direccion, String cif) {
 		super();
 		this.id_tienda = id_tienda;
 		this.nombre = nombre;
 		this.telefono = telefono;
+		this.email = email;
 		this.direccion = direccion;
 		this.cif = cif;
 	}
@@ -46,6 +48,14 @@ public class Tienda {
 		this.telefono = telefono;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public String getDireccion() {
 		return direccion;
 	}
@@ -61,8 +71,4 @@ public class Tienda {
 	public void setCif(String cif) {
 		this.cif = cif;
 	}
-
-
-	
-	
 }
