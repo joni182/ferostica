@@ -1,21 +1,34 @@
 package com.joni.ferostica.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class RegistroTiendaArticulo {
 
+	@Id
+	@GeneratedValue( strategy= GenerationType.AUTO ) 
 	private long id_registro;
-	private long id_articulo;
-	private long id_tienda;
+
+	@ManyToOne
+	private Tienda tienda;
 	
+	@ManyToOne
+	private Articulo articulo;
+
 	public RegistroTiendaArticulo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public RegistroTiendaArticulo(long id_registro, Articulo articulo, Tienda tienda) {
+	public RegistroTiendaArticulo(long id_registro, Tienda tienda, Articulo articulo) {
 		super();
 		this.id_registro = id_registro;
-		this.id_articulo = extractId(articulo);
-		this.id_tienda = extractId(tienda);
+		this.tienda = tienda;
+		this.articulo = articulo;
 	}
 
 	public long getId_registro() {
@@ -26,39 +39,21 @@ public class RegistroTiendaArticulo {
 		this.id_registro = id_registro;
 	}
 
-	public long getId_articulo() {
-		return id_articulo;
+	public Tienda getTienda() {
+		return tienda;
 	}
 
-	public void setId_articulo(int id_articulo) {
-		this.id_articulo = id_articulo;
+	public void setTienda(Tienda tienda) {
+		this.tienda = tienda;
 	}
 
-	public long getId_tienda() {
-		return id_tienda;
+	public Articulo getArticulo() {
+		return articulo;
 	}
 
-	public void setId_tienda(int id_tienda) {
-		this.id_tienda = id_tienda;
+	public void setArticulo(Articulo articulo) {
+		this.articulo = articulo;
 	}
-	
-	private long extractId(Object unObjeto){
-		if (unObjeto == null){
-			new NullPointerException();
-		}
-		
-		if ( unObjeto instanceof Articulo){
-			// TODO aun no estan los accesores de articulo
-			Articulo articulo = (Articulo)unObjeto;
-			return 4; 
-			
-		}else if (unObjeto instanceof Tienda){
-			Tienda tienda = (Tienda)unObjeto;
-			return tienda.getId_tienda(); 
-		}else {
-			new IllegalArgumentException("El objeto recibido no es una instancia de tienda ni de artículo");
-		}	
-		return 0;
-	}
+
 	
 }

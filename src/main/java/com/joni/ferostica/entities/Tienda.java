@@ -1,13 +1,28 @@
 package com.joni.ferostica.entities;
 
+import java.util.ArrayList;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+@Entity
 public class Tienda {
 
+	@Id
+	@GeneratedValue( strategy= GenerationType.AUTO ) 
 	private long id_tienda;
 	private String nombre;
 	private int telefono;
 	private String email;
 	private String direccion;
 	private String cif;
+	
+	@OneToMany
+	ArrayList<Articulo> articulos;
 	
 	public Tienda() {
 		super();
