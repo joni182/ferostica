@@ -21,15 +21,14 @@ public class Tienda {
 	private String direccion;
 	private String cif;
 	
-	@OneToMany
-	ArrayList<Articulo> articulos;
-	
+
 	public Tienda() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Tienda(long id_tienda, String nombre, int telefono, String email, String direccion, String cif) {
+	public Tienda(long id_tienda, String nombre, int telefono, String email, String direccion, String cif,
+			ArrayList<Articulo> articulos) {
 		super();
 		this.id_tienda = id_tienda;
 		this.nombre = nombre;
@@ -86,4 +85,6 @@ public class Tienda {
 	public void setCif(String cif) {
 		this.cif = cif;
 	}
-}
+
+	
+}	

@@ -1,5 +1,8 @@
 package com.joni.ferostica.entities;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,12 +15,14 @@ public class RegistroTiendaArticulo {
 	@Id
 	@GeneratedValue( strategy= GenerationType.AUTO ) 
 	private long id_registro;
-
+	
 	@ManyToOne
 	private Tienda tienda;
 	
 	@ManyToOne
 	private Articulo articulo;
+	
+	private Date fecha;
 
 	public RegistroTiendaArticulo() {
 		super();
@@ -29,6 +34,7 @@ public class RegistroTiendaArticulo {
 		this.id_registro = id_registro;
 		this.tienda = tienda;
 		this.articulo = articulo;
+		this.fecha = Calendar.getInstance().getTime();
 	}
 
 	public long getId_registro() {

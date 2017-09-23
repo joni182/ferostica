@@ -1,6 +1,9 @@
 package com.joni.ferostica.entities;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -55,6 +58,8 @@ public class Color {
 	public void setArticulos(ArrayList<Articulo> articulos) {
 		this.articulos = articulos;
 	}
+	
+
 	
 	
 }

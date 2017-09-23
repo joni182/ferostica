@@ -26,8 +26,6 @@ public class Articulo {
 	@ManyToOne
 	private Color color;
 	
-	@ManyToOne
-	private Tienda tienda;
 	
 	@ManyToOne
 	private TipoPrenda tipoPrenda;
@@ -49,7 +47,6 @@ public class Articulo {
 		this.tallaLetras = tallaLetras;
 		this.porcentaje = porcentaje;
 		this.color = color;
-		this.tienda = tienda;
 		this.tipoPrenda = tipoPrenda;
 	}
 
@@ -123,14 +120,6 @@ public class Articulo {
 
 	public void setColor(Color color) {
 		this.color = color;
-	}
-
-	public Tienda getTienda() {
-		return tienda;
-	}
-
-	public void setTienda(Tienda tienda) {
-		this.tienda = tienda;
 	}
 
 	public TipoPrenda getTipoPrenda() {
