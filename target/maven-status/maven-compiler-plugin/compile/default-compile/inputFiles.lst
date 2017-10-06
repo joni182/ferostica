@@ -1,0 +1,15 @@
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/App.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/Articulo.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/RegistroTiendaArticulo.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/ColorRepository.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/enumerations/Estado.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/Tienda.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/Color.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/enumerations/TallaLetras.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/enumerations/Genero.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/enumerations/TallasNumeros.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/TiendaRepository.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/RegistroTiendaArticuloRepository.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/TipoPrendaRepository.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/ArticuloRepository.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/TipoPrenda.java

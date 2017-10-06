@@ -14,15 +14,15 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Color {
-	
+
 	@Id
-	@GeneratedValue( strategy= GenerationType.AUTO ) 
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id_color;
 	private String color;
-	
-	@OneToMany
-	ArrayList<Articulo> articulos;
 
+	/* No funciona TODO
+	 * @OneToMany ArrayList<Articulo> articulos;
+	 */
 	public Color() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -32,7 +32,7 @@ public class Color {
 		super();
 		this.id_color = id_color;
 		this.color = color;
-		this.articulos = articulos;
+		// this.articulos = articulos;
 	}
 
 	public long getId_color() {
@@ -51,6 +51,7 @@ public class Color {
 		this.color = color;
 	}
 
+	/*
 	public ArrayList<Articulo> getArticulos() {
 		return articulos;
 	}
@@ -58,8 +59,6 @@ public class Color {
 	public void setArticulos(ArrayList<Articulo> articulos) {
 		this.articulos = articulos;
 	}
-	
+	*/
 
-	
-	
 }

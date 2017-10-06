@@ -17,8 +17,10 @@ public class TipoPrenda {
 	private Long id_tipoPrenda;
 	private String tipoPrenda;
 	
+	/* No funciona
 	@OneToMany
 	ArrayList<Articulo> articulos;
+	*/
 
 	public TipoPrenda() {
 		super();
@@ -29,7 +31,7 @@ public class TipoPrenda {
 		super();
 		this.id_tipoPrenda = id_tipoPrenda;
 		this.tipoPrenda = tipoPrenda;
-		this.articulos = articulos;
+		//this.articulos = articulos;
 	}
 
 	public Long getId_tipoPrenda() {
@@ -47,7 +49,7 @@ public class TipoPrenda {
 	public void setTipoPrenda(String tipoPrenda) {
 		this.tipoPrenda = tipoPrenda;
 	}
-
+/*
 	public ArrayList<Articulo> getArticulos() {
 		return articulos;
 	}
@@ -55,6 +57,6 @@ public class TipoPrenda {
 	public void setArticulos(ArrayList<Articulo> articulos) {
 		this.articulos = articulos;
 	}
-
+*/
 	
 }

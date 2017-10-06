@@ -1,0 +1,15 @@
+com/joni/ferostica/entities/enumerations/TallasNumeros.class
+com/joni/ferostica/repositories/RegistroTiendaArticuloRepository.class
+com/joni/ferostica/entities/TipoPrenda.class
+com/joni/ferostica/entities/Tienda.class
+com/joni/ferostica/repositories/ArticuloRepository.class
+com/joni/ferostica/App.class
+com/joni/ferostica/entities/RegistroTiendaArticulo.class
+com/joni/ferostica/repositories/TipoPrendaRepository.class
+com/joni/ferostica/entities/Color.class
+com/joni/ferostica/entities/enumerations/Estado.class
+com/joni/ferostica/entities/enumerations/Genero.class
+com/joni/ferostica/repositories/ColorRepository.class
+com/joni/ferostica/entities/enumerations/TallaLetras.class
+com/joni/ferostica/repositories/TiendaRepository.class
+com/joni/ferostica/entities/Articulo.class
