@@ -29,6 +29,9 @@ public class Articulo {
 	
 	@ManyToOne
 	private TipoPrenda tipoPrenda;
+	
+	@ManyToOne
+	private Tienda tienda;
 
 	public Articulo() {
 		super();
@@ -36,7 +39,7 @@ public class Articulo {
 	}
 
 	public Articulo(long id_aticulo, double precio, Genero genero, Estado estado, String observaciones,
-			int tallaNumerica, String tallaLetras, int porcentaje, Color color, Tienda tienda, TipoPrenda tipoPrenda) {
+			int tallaNumerica, String tallaLetras, int porcentaje, Color color, TipoPrenda tipoPrenda, Tienda tienda) {
 		super();
 		this.id_aticulo = id_aticulo;
 		this.precio = precio;
@@ -48,6 +51,7 @@ public class Articulo {
 		this.porcentaje = porcentaje;
 		this.color = color;
 		this.tipoPrenda = tipoPrenda;
+		this.tienda = tienda;
 	}
 
 	public long getId_aticulo() {
@@ -129,6 +133,7 @@ public class Articulo {
 	public void setTipoPrenda(TipoPrenda tipoPrenda) {
 		this.tipoPrenda = tipoPrenda;
 	}
+	
 	
 	
 }

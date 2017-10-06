@@ -1,6 +1,7 @@
 package com.joni.ferostica.entities;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,21 +18,20 @@ public class TipoPrenda {
 	private Long id_tipoPrenda;
 	private String tipoPrenda;
 	
-	/* No funciona
+	
 	@OneToMany
-	ArrayList<Articulo> articulos;
-	*/
+	List<Articulo> articulos;
 
 	public TipoPrenda() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public TipoPrenda(Long id_tipoPrenda, String tipoPrenda, ArrayList<Articulo> articulos) {
+	public TipoPrenda(Long id_tipoPrenda, String tipoPrenda, List<Articulo> articulos) {
 		super();
 		this.id_tipoPrenda = id_tipoPrenda;
 		this.tipoPrenda = tipoPrenda;
-		//this.articulos = articulos;
+		this.articulos = articulos;
 	}
 
 	public Long getId_tipoPrenda() {
@@ -49,14 +49,14 @@ public class TipoPrenda {
 	public void setTipoPrenda(String tipoPrenda) {
 		this.tipoPrenda = tipoPrenda;
 	}
-/*
-	public ArrayList<Articulo> getArticulos() {
+
+	public List<Articulo> getArticulos() {
 		return articulos;
 	}
 
-	public void setArticulos(ArrayList<Articulo> articulos) {
+	public void setArticulos(List<Articulo> articulos) {
 		this.articulos = articulos;
 	}
-*/
+
 	
 }

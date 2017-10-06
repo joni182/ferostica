@@ -3,6 +3,7 @@ package com.joni.ferostica.entities;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 import javax.persistence.Entity;
@@ -20,19 +21,20 @@ public class Color {
 	private long id_color;
 	private String color;
 
-	/* No funciona TODO
-	 * @OneToMany ArrayList<Articulo> articulos;
-	 */
+	
+	  @OneToMany 
+	  List<Articulo> articulos;
+	 
 	public Color() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Color(long id_color, String color, ArrayList<Articulo> articulos) {
+	public Color(long id_color, String color, List<Articulo> articulos) {
 		super();
 		this.id_color = id_color;
 		this.color = color;
-		// this.articulos = articulos;
+		this.articulos = articulos;
 	}
 
 	public long getId_color() {
@@ -51,14 +53,14 @@ public class Color {
 		this.color = color;
 	}
 
-	/*
-	public ArrayList<Articulo> getArticulos() {
+	
+	public List<Articulo> getArticulos() {
 		return articulos;
 	}
 
-	public void setArticulos(ArrayList<Articulo> articulos) {
+	public void setArticulos(List<Articulo> articulos) {
 		this.articulos = articulos;
 	}
-	*/
+	
 
 }

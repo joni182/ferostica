@@ -1,6 +1,7 @@
 package com.joni.ferostica.entities;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +22,9 @@ public class Tienda {
 	private String direccion;
 	private String cif;
 	
-
+	@OneToMany
+	List<Articulo> articulos;
+	
 	public Tienda() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -36,6 +39,8 @@ public class Tienda {
 		this.email = email;
 		this.direccion = direccion;
 		this.cif = cif;
+		this.articulos = articulos;
+
 	}
 
 	public long getId_tienda() {
@@ -84,6 +89,14 @@ public class Tienda {
 
 	public void setCif(String cif) {
 		this.cif = cif;
+	}
+
+	public List<Articulo> getArticulos() {
+		return articulos;
+	}
+
+	public void setArticulos(List<Articulo> articulos) {
+		this.articulos = articulos;
 	}
 
 	
