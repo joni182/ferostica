@@ -1,4 +1,4 @@
-package com.joni.ferostica.entities;
+ package com.joni.ferostica.entities;
 
 import com.joni.ferostica.entities.enumerations.Estado;
 import com.joni.ferostica.entities.enumerations.Genero;
@@ -9,12 +9,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 @Entity
 public class Articulo {
 
 	@Id
 	@GeneratedValue( strategy= GenerationType.AUTO ) 
-	private long id_aticulo;
+	private Long id_aticulo;
 	private double precio;
 	private Genero genero;
 	private Estado estado;
@@ -22,6 +24,7 @@ public class Articulo {
 	private int tallaNumerica;
 	private String tallaLetras;
 	private int porcentaje;
+	
 	
 	@ManyToOne
 	private Color color;
@@ -32,13 +35,14 @@ public class Articulo {
 	
 	@ManyToOne
 	private Tienda tienda;
-
+	
+	@Autowired
 	public Articulo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Articulo(long id_aticulo, double precio, Genero genero, Estado estado, String observaciones,
+	public Articulo(Long id_aticulo, double precio, Genero genero, Estado estado, String observaciones,
 			int tallaNumerica, String tallaLetras, int porcentaje, Color color, TipoPrenda tipoPrenda, Tienda tienda) {
 		super();
 		this.id_aticulo = id_aticulo;
@@ -54,11 +58,11 @@ public class Articulo {
 		this.tienda = tienda;
 	}
 
-	public long getId_aticulo() {
+	public Long getId_aticulo() {
 		return id_aticulo;
 	}
 
-	public void setId_aticulo(long id_aticulo) {
+	public void setId_aticulo(Long id_aticulo) {
 		this.id_aticulo = id_aticulo;
 	}
 
@@ -132,6 +136,14 @@ public class Articulo {
 
 	public void setTipoPrenda(TipoPrenda tipoPrenda) {
 		this.tipoPrenda = tipoPrenda;
+	}
+
+	@Override
+	public String toString() {
+		return "Articulo [id_aticulo=" + id_aticulo + ", precio=" + precio + ", genero=" + genero + ", estado=" + estado
+				+ ", observaciones=" + observaciones + ", tallaNumerica=" + tallaNumerica + ", tallaLetras="
+				+ tallaLetras + ", porcentaje=" + porcentaje + ", color=" + color + ", tipoPrenda=" + tipoPrenda
+				+ ", tienda=" + tienda + "]";
 	}
 	
 	

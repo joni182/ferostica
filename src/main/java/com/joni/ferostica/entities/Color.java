@@ -18,7 +18,7 @@ public class Color {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id_color;
+	private Long id_color;
 	private String color;
 
 	

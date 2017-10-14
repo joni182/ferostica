@@ -11,5 +11,6 @@ com/joni/ferostica/entities/enumerations/Estado.class
 com/joni/ferostica/entities/enumerations/Genero.class
 com/joni/ferostica/repositories/ColorRepository.class
 com/joni/ferostica/entities/enumerations/TallaLetras.class
+com/joni/ferostica/services/ArticuloService.class
 com/joni/ferostica/repositories/TiendaRepository.class
 com/joni/ferostica/entities/Articulo.class

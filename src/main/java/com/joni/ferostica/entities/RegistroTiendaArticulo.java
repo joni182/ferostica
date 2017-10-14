@@ -14,7 +14,7 @@ public class RegistroTiendaArticulo {
 
 	@Id
 	@GeneratedValue( strategy= GenerationType.AUTO ) 
-	private long id_registro;
+	private Long id_registro;
 	
 	@ManyToOne
 	private Tienda tienda;

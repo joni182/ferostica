@@ -15,7 +15,7 @@ public class Tienda {
 
 	@Id
 	@GeneratedValue( strategy= GenerationType.AUTO ) 
-	private long id_tienda;
+	private Long id_tienda;
 	private String nombre;
 	private int telefono;
 	private String email;

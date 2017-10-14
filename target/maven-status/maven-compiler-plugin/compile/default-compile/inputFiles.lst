@@ -13,3 +13,4 @@
 /home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/TipoPrendaRepository.java
 /home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/repositories/ArticuloRepository.java
 /home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/entities/TipoPrenda.java
+/home/joni/desarrollo/eclipse-java/workspace/ferostica/src/main/java/com/joni/ferostica/services/ArticuloService.java
