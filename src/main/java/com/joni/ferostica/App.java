@@ -27,10 +27,9 @@ public class App {
 	
 	
 	
-	Articulo articulo = new Articulo(null, 33, Genero.CHICA, Estado.VENDIDO, "Prueba", 45, TallaLetras.TALLAS[3], 33, null, null, null); 
+	// Articulo articulo = new Articulo(null, 33, Genero.CHICA, Estado.VENDIDO, "Prueba", 45, TallaLetras.TALLAS[3], 33, null, null, null); 
 
-	System.out.println(articulo);
-	servicio.guardar(articulo);
+
 	
 	
 	

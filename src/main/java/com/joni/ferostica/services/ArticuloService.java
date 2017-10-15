@@ -16,7 +16,7 @@ import com.joni.ferostica.repositories.ArticuloRepository;
 public class ArticuloService {
 	
 	@Autowired
-	private JpaRepository<Articulo,Long> articuloRepository;
+	private ArticuloRepository articuloRepository;
 	
 	
 
@@ -25,10 +25,10 @@ public class ArticuloService {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void guardar(Articulo articulo){
+	public Articulo guardar(Articulo articulo){
 
 		System.out.println(articuloRepository);
-		articuloRepository.save(articulo);
+		return articuloRepository.save(articulo);
 	}
 	
 	public Articulo modificar(Articulo articuloNuevo){

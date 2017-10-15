@@ -26,24 +26,25 @@ public class Articulo {
 	private int porcentaje;
 	
 	
-	@ManyToOne
-	private Color color;
-	
-	
-	@ManyToOne
-	private TipoPrenda tipoPrenda;
-	
-	@ManyToOne
-	private Tienda tienda;
-	
-	@Autowired
-	public Articulo() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+//	@ManyToOne
+//	private Color color;
+//	
+//	
+//	@ManyToOne
+//	private TipoPrenda tipoPrenda;
+//	
+//	@ManyToOne
+//	private Tienda tienda;
+//	
+//	@Autowired
+//	public Articulo() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//	}
 
+	
 	public Articulo(Long id_aticulo, double precio, Genero genero, Estado estado, String observaciones,
-			int tallaNumerica, String tallaLetras, int porcentaje, Color color, TipoPrenda tipoPrenda, Tienda tienda) {
+			int tallaNumerica, String tallaLetras, int porcentaje/*, Color color, TipoPrenda tipoPrenda, Tienda tienda*/) {
 		super();
 		this.id_aticulo = id_aticulo;
 		this.precio = precio;
@@ -53,10 +54,19 @@ public class Articulo {
 		this.tallaNumerica = tallaNumerica;
 		this.tallaLetras = tallaLetras;
 		this.porcentaje = porcentaje;
-		this.color = color;
-		this.tipoPrenda = tipoPrenda;
-		this.tienda = tienda;
+//		this.color = color;
+//		this.tipoPrenda = tipoPrenda;
+//		this.tienda = tienda;
 	}
+	
+	
+
+	public Articulo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
 
 	public Long getId_aticulo() {
 		return id_aticulo;
@@ -122,29 +132,29 @@ public class Articulo {
 		this.porcentaje = porcentaje;
 	}
 
-	public Color getColor() {
-		return color;
-	}
-
-	public void setColor(Color color) {
-		this.color = color;
-	}
-
-	public TipoPrenda getTipoPrenda() {
-		return tipoPrenda;
-	}
-
-	public void setTipoPrenda(TipoPrenda tipoPrenda) {
-		this.tipoPrenda = tipoPrenda;
-	}
-
-	@Override
-	public String toString() {
-		return "Articulo [id_aticulo=" + id_aticulo + ", precio=" + precio + ", genero=" + genero + ", estado=" + estado
-				+ ", observaciones=" + observaciones + ", tallaNumerica=" + tallaNumerica + ", tallaLetras="
-				+ tallaLetras + ", porcentaje=" + porcentaje + ", color=" + color + ", tipoPrenda=" + tipoPrenda
-				+ ", tienda=" + tienda + "]";
-	}
+//	public Color getColor() {
+//		return color;
+//	}
+//
+//	public void setColor(Color color) {
+//		this.color = color;
+//	}
+//
+//	public TipoPrenda getTipoPrenda() {
+//		return tipoPrenda;
+//	}
+//
+//	public void setTipoPrenda(TipoPrenda tipoPrenda) {
+//		this.tipoPrenda = tipoPrenda;
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "Articulo [id_aticulo=" + id_aticulo + ", precio=" + precio + ", genero=" + genero + ", estado=" + estado
+//				+ ", observaciones=" + observaciones + ", tallaNumerica=" + tallaNumerica + ", tallaLetras="
+//				+ tallaLetras + ", porcentaje=" + porcentaje + ", color=" + color + ", tipoPrenda=" + tipoPrenda
+//				+ ", tienda=" + tienda + "]";
+//	}
 	
 	
 	
